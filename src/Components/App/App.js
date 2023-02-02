@@ -3,6 +3,7 @@ import React from "react";
 import { Playlist } from "../Playlist/Playlist";
 import { SearchBar } from "../SearchBar/SearchBar";
 import { SearchResults } from "../SearchReasults/SearchResults";
+import  Spotify  from "../../util/Spotify.js";
 import "./App.css";
 
 class App extends React.Component {
@@ -63,8 +64,10 @@ class App extends React.Component {
     const trackURIs = this.state.playlistTracks.map(track=>track.uri)
   }
 
-  search(search) {
-    console.log(search)
+  search(term) {
+    Spotify.search(term).then(searchResults=>{
+      this.setState({searchResults: searchResults})
+    })
   }
 
   render() {
