@@ -1,3 +1,4 @@
+let accessToken;
 let expiresIn;
 const clientId = process.env.REACT_APP_CID;
 
