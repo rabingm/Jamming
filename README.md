@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Description 
+This project allows user to save a song playlist to their Spotify Playlist
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started with Jamming
+1. Clone the project $git clone ...
+2. Navigate to Jamming directory $cd Jamming from the folder where it's cloned
+3. Install npm package npm install
+4. Create .env file in root directory of the project
+5. Enter 
 
 ## Available Scripts
 
