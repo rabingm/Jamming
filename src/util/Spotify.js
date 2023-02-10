@@ -2,7 +2,7 @@ let accessToken;
 let expiresIn;
 const clientId = process.env.REACT_APP_CID;
 
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://steady-mousse-1ee074.netlify.app/";
 
 const Spotify = {
   getAccessToken() {
@@ -24,6 +24,7 @@ const Spotify = {
     } else {
       const accessUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUri}`;
       window.location = accessUrl;
+      console.log('first',accessUrl)
     }
   },
 
