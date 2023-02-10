@@ -2,7 +2,7 @@ let accessToken;
 let expiresIn;
 const clientId = process.env.REACT_APP_CID;
 
-const redirectUri = "https://steady-mousse-1ee074.netlify.app/";
+const redirectUri = "https://spotifyjamming.netlify.app/";
 
 const Spotify = {
   getAccessToken() {
